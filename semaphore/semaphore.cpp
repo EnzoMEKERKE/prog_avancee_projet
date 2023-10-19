@@ -14,7 +14,7 @@ mutex print_mutex;  // Mutex pour synchroniser l'affichage
 mutex mtx;  // Mutex pour protéger l'accès à la salle d'attente et au client actuel
 sem_t caissierLibre;  // Sémaphore indiquant si le caissier est libre
 sem_t clientsEnAttente;  // Sémaphore comptant le nombre de clients en attente
-const int NB_CHAIRS = 5;  // Nombre de chaises dans la zone d'attente prioritaire
+const int NB_CHAISES = 5;  // Nombre de chaises dans la zone d'attente prioritaire
 deque<int> salleAttente;  // Liste des clients en attente
 int clientActuel = -1;  // ID du client actuellement servi, -1 = aucun
 
@@ -67,7 +67,7 @@ void client(int id) {
         sem_post(&clientsEnAttente);
         mtx.unlock();
         sem_wait(&caissierLibre);
-    } else if (salleAttente.size() < NB_CHAIRS) {  // Si le caissier est occupé, essayer de s'asseoir dans la salle d'attente
+    } else if (salleAttente.size() < NB_CHAISES) {  // Si le caissier est occupé, essayer de s'asseoir dans la salle d'attente
         salleAttente.push_back(id);
         print_mutex.lock();
         cout << "Client " << id << " attend dans la zone d'attente prioritaire. Clients en attente : " << salleAttente.size() << endl;
