@@ -8,6 +8,6 @@ Imaginez donc un supermarché avec plusieurs caisses et une caisse prioritaire. 
 - Le caissier ne peut servir qu'une personne à la fois.
 - Si le caissier est libre et qu'un client de la caisse prioritaire arrive, il est servi immédiatement.
 - Si le caissier est occupé, les clients de la caisse prioritaire attendent dans la zone d'attente.
-- La zone d'attente a un nombre limité de places (défini par NB_CHAIRS, ici 5). Si elle est pleine, les clients doivent partir ou choisir une autre caisse.
+- La zone d'attente a un nombre limité de places (défini par NB_CHAISES, ici 5). Si elle est pleine, les clients doivent partir ou choisir une autre caisse.
 - Si la caisse prioritaire n'a pas de clients, le caissier peut se reposer.
 
