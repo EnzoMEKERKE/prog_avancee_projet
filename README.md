@@ -1,6 +1,6 @@
 # Projet de programation système
 
-Ce projet consiste à résoudre l'un des problèmes de coordination présent dans le livre "The little book of semaphores". Ainsi, nous avons choisi le problème du chaptre 5.2, "The barber shop problem". Ainsi, nous avons adapté ce problème à une situation de la vie réelle tout en gardant le même principe.
+Ce projet consiste à résoudre l'un des problèmes de coordination présent dans le livre "The little book of semaphores". Ainsi, nous avons choisi le problème du chaptre 5.2, "The barber shop problem". De ce fait, nous avons adapté ce problème à une situation de la vie réelle tout en gardant le même principe.
 
 Imaginez donc un supermarché avec plusieurs caisses et une caisse prioritaire. La caisse prioritaire est gérée par un caissier unique. Voici les règles du système :
 
